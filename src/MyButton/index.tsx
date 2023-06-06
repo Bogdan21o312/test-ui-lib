@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from 'react';
-import "./Button.css"
+import "./MyButton.css"
 
 export interface MyButtonProps {
     color: string;
@@ -8,7 +8,7 @@ export interface MyButtonProps {
 
 export const MyButton: FC<MyButtonProps> = ({color, children, ...props}) => {
     return (
-        <button {...props} className={"Button"} style={{color}}>
+        <button {...props} className="Button" style={{color}}>
             {children}
         </button>
     );
